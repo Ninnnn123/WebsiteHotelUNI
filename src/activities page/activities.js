@@ -60,10 +60,10 @@ function Activities() {
                             <Nav className="main-nav">
                                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/room">Rooms</Nav.Link>
-                                <Nav.Link href="#dining">Dining</Nav.Link>
-                                <Nav.Link href="#activities">Activities</Nav.Link>
-                                <Nav.Link href="#spa">Spa</Nav.Link>
-                                <Nav.Link href="#gallery">Gallery</Nav.Link>
+                                <Nav.Link as={Link} to="/dining">Dining</Nav.Link>
+                                <Nav.Link as={Link} to="/activities">Activities</Nav.Link>
+                                <Nav.Link as={Link} to="/spa">Spa</Nav.Link>
+                                <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                             </Nav>
                             <Button className="header-book-btn ms-3">Book Now</Button>

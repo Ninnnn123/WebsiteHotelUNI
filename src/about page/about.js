@@ -25,10 +25,10 @@ function About() {
                             <Nav className="ms-auto align-items-center">
                                 <Nav.Link as={Link} to="/" className="about-nav-link">Home</Nav.Link> {/* Changed */}
                                 <Nav.Link as={Link} to="/room" className="about-nav-link">Rooms</Nav.Link> {/* Changed */}
-                                <Nav.Link href="#dining" className="about-nav-link">Dining</Nav.Link> {/* Changed */}
-                                <Nav.Link href="#activities" className="about-nav-link">Activities</Nav.Link> {/* Changed */}
-                                <Nav.Link href="#spa" className="about-nav-link">Spa</Nav.Link> {/* Changed */}
-                                <Nav.Link href="#gallery" className="about-nav-link">Gallery</Nav.Link> {/* Changed */}
+                                <Nav.Link as={Link} to="/dining" className="about-nav-link">Dining</Nav.Link> {/* Changed */}
+                                <Nav.Link as={Link} to="/activities" className="about-nav-link">Activities</Nav.Link> {/* Changed */}
+                                <Nav.Link as={Link} to="/spa" className="about-nav-link">Spa</Nav.Link> {/* Changed */}
+                                <Nav.Link as={Link} to="/gallery" className="about-nav-link">Gallery</Nav.Link> {/* Changed */}
                                 <Nav.Link as={Link} to="/about" className="about-nav-link">About Us</Nav.Link> {/* Changed */}
                                 <Button variant="outline-light" className="about-book-now-btn ms-3">Book Now</Button> {/* Changed */}
                                 <Nav.Link href="#language" className="about-nav-link ms-2"><BsGlobe size={20} /></Nav.Link> {/* Changed */}

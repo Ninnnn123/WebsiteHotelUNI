@@ -24,10 +24,10 @@ function Gallery() {
                             <Nav className="ms-auto align-items-center">
                                 <Nav.Link as={Link} to="/" className="about-nav-link">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/room" className="about-nav-link">Rooms</Nav.Link>
-                                <Nav.Link href="#dining" className="about-nav-link">Dining</Nav.Link>
-                                <Nav.Link href="#activities" className="about-nav-link">Activities</Nav.Link>
-                                <Nav.Link href="#spa" className="about-nav-link">Spa</Nav.Link>
-                                <Nav.Link href="#gallery" className="about-nav-link">Gallery</Nav.Link>
+                                <Nav.Link as={Link} to="/dining" className="about-nav-link">Dining</Nav.Link>
+                                <Nav.Link as={Link} to="/activities" className="about-nav-link">Activities</Nav.Link>
+                                <Nav.Link as={Link} to="/spa" className="about-nav-link">Spa</Nav.Link>
+                                <Nav.Link as={Link} to="/gallery" className="about-nav-link">Gallery</Nav.Link>
                                 <Nav.Link as={Link} to="/about" className="about-nav-link">About Us</Nav.Link>
                                 <Button variant="outline-light" className="about-book-now-btn ms-3">Book Now</Button>
                                 <Nav.Link href="#language" className="about-nav-link ms-2"><BsGlobe size={20} /></Nav.Link>

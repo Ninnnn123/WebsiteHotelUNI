@@ -1,50 +1,58 @@
 import { Navbar, Nav, Button, Container, Row, Col, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Import Link
-import { BsGlobe } from 'react-icons/bs'; // Import globe icon
+import { Link } from 'react-router-dom';
 import './room.css';
 
 function Room() {
     // Define your hero background image URL here
     const heroBackgroundImage = 'https://m.ahstatic.com/is/image/accorhotels/aja_p_7238-61?qlt=82&wid=1199&ts=1734691753609&dpr=off';
 
+    const heroStyle = {
+        backgroundImage: `url(${heroBackgroundImage})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover'
+    };
+
     return (
         <>
-            {/* Hero Section - Navbar */}
-            <div
-                className="room-page-hero-section"
-                style={{ backgroundImage: `url(${heroBackgroundImage})` }}
-            >
-                <Navbar expand="lg" variant="dark" className="room-page-navbar">
-                    <Container fluid>
-                        <Navbar.Brand href="#">
-                            {/* Replaced with text logo */}
-                            <span className="room-page-logo-text">Hotel Cambodge</span>
+            {/* Hero Section - Updated to match home.js structure and classes */}
+            <header className="anantara-hero-section" style={heroStyle}>
+                <div className="anantara-hero-overlay"></div>
+                <Navbar expand="lg" variant="dark" className="anantara-main-navbar">
+                    <Container>
+                        <Navbar.Brand href="#home" className="d-flex align-items-center">
+                             <img
+                                src="https://www.raffles.com/content/dam/raffles-aem/property-logos/logo-phnom-penh-horizontal.svg" // Using the same logo as home page
+                                height="25"
+                                className="d-inline-block align-top me-2"
+                                alt="Anantara Angkor logo"
+                            />
+                            Anantara Angkor
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end"> {/* Changed justify-content-center to justify-content-end */}
-                            <Nav className="ms-auto align-items-center"> {/* Added ms-auto and align-items-center */}
-                                <Nav.Link as={Link} to="/" className="room-page-nav-link">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/room" className="room-page-nav-link">Rooms</Nav.Link>
-                                <Nav.Link href="#dining" className="room-page-nav-link">Dining</Nav.Link>
-                                <Nav.Link href="#experiences" className="room-page-nav-link">Experiences</Nav.Link>
-                                <Nav.Link href="#spa" className="room-page-nav-link">Spa</Nav.Link>
-                                <Nav.Link href="#meetings" className="room-page-nav-link">Meetings & Events</Nav.Link>
-                                <Nav.Link as={Link} to="/about" className="room-page-nav-link">About Us</Nav.Link> {/* Added About Us link */}
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="ms-auto align-items-center">
+                                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/room">Rooms</Nav.Link>
+                                <Nav.Link as={Link} to="/dining">Dining</Nav.Link>
+                                <Nav.Link as={Link} to="/activities">Activities</Nav.Link>
+                                <Nav.Link as={Link} to="/spa">Spa</Nav.Link>
+                                <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
+                                <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                                <Button className="anantara-btn-custom-orange ms-3">Book Now</Button>
                             </Nav>
                         </Navbar.Collapse>
-                        <Button variant="primary" className="room-page-hero-book-btn">Book Now</Button>
-                        <Nav.Link href="#language" className="room-page-nav-link ms-2"><BsGlobe size={20} /></Nav.Link> {/* Added globe icon */}
                     </Container>
                 </Navbar>
 
-                <Container className="room-page-hero-content text-center text-white">
-                    <h1>Our Rooms & Suites</h1>
-                    <p>
+                <Container className="anantara-hero-content text-center text-white">
+                    <h1 className="anantara-hero-title">Our Rooms & Suites</h1>
+                    <p className="anantara-hero-subtitle">
                         Discover your perfect sanctuary at Hotel Cambodge. Our rooms and suites offer a blend of
                         luxury, comfort and breathtaking views, creating an unforgettable stay.
                     </p>
                 </Container>
-            </div>
+            </header>
 
             {/* Room Section */}
             <Container className="room-page-content-section my-5">
