@@ -1,0 +1,261 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap');
+
+/* --- General Page Style --- */
+.activities-page {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+/* --- Hero Section --- */
+.activities-hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #EAEAEA;
+    height: 70vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff; 
+}
+
+/* UPDATED: Added overlay style */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1; 
+}
+
+
+/* --- Navbar inside Hero --- */
+.activities-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important;
+    padding: 1rem 0;
+    z-index: 2; /* Sits on top of the overlay */
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff !important; 
+    display: flex;
+    align-items: center;
+}
+
+.logo-svg {
+    stroke: #fff; 
+}
+
+.main-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    margin: 0 0.75rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.main-nav .nav-link.active {
+    color: #fff !important; 
+    font-weight: 500;
+}
+
+.header-book-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.header-book-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-color: #fff;
+    color: #fff;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* --- Hero Content (Title & Subtitle) --- */
+.activities-hero-content {
+    position: relative; 
+    z-index: 2;
+}
+
+.activities-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff; /* UPDATED to white */
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+}
+
+.activities-hero-subtitle {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9); 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+
+/* --- Main Content & General Section Styling --- */
+main {
+    background-color: #fff;
+    padding-top: 3rem;
+}
+
+.activities-section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-intro-text {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* --- Cards Styling (Treatments & Wellness) --- */
+.activity-card {
+    background-color: #F8FBFB;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+}
+.activity-card .card-body {
+    padding: 2.5rem;
+}
+
+.card-duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+
+.cta-link {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.cta-link:hover {
+    color: #000;
+}
+
+.card-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* --- Activities Gallery --- */
+.activities-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.gallery-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gallery-collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* --- Footer --- */
+.activities-footer-section {
+    background-color: white;
+    padding: 2rem 0 1rem 0;
+    color: var(--anantara-color-light-text);
+}
+.activities-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.activities-footer-brand {
+    font-weight: 500;
+    color: var(--anantara-color-dark-text);
+    display: flex;
+    align-items: center;
+}
+.activities-footer-nav .nav-link {
+    color: var(--anantara-color-light-text);
+    padding: 0.5rem;
+}
+.activities-footer-nav .nav-link:hover {
+    color: var(--anantara-color-dark-text);
+}
+.activities-copyright {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}

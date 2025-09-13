@@ -1,0 +1,166 @@
+import { Navbar, Nav, Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Import Link
+import { BsGlobe } from 'react-icons/bs'; // Import globe icon
+import './room.css';
+
+function Room() {
+    // Define your hero background image URL here
+    const heroBackgroundImage = 'https://m.ahstatic.com/is/image/accorhotels/aja_p_7238-61?qlt=82&wid=1199&ts=1734691753609&dpr=off';
+
+    return (
+        <>
+            {/* Hero Section - Navbar */}
+            <div
+                className="room-page-hero-section"
+                style={{ backgroundImage: `url(${heroBackgroundImage})` }}
+            >
+                <Navbar expand="lg" variant="dark" className="room-page-navbar">
+                    <Container fluid>
+                        <Navbar.Brand href="#">
+                            {/* Replaced with text logo */}
+                            <span className="room-page-logo-text">Hotel Cambodge</span>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end"> {/* Changed justify-content-center to justify-content-end */}
+                            <Nav className="ms-auto align-items-center"> {/* Added ms-auto and align-items-center */}
+                                <Nav.Link as={Link} to="/" className="room-page-nav-link">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/room" className="room-page-nav-link">Rooms</Nav.Link>
+                                <Nav.Link href="#dining" className="room-page-nav-link">Dining</Nav.Link>
+                                <Nav.Link href="#experiences" className="room-page-nav-link">Experiences</Nav.Link>
+                                <Nav.Link href="#spa" className="room-page-nav-link">Spa</Nav.Link>
+                                <Nav.Link href="#meetings" className="room-page-nav-link">Meetings & Events</Nav.Link>
+                                <Nav.Link as={Link} to="/about" className="room-page-nav-link">About Us</Nav.Link> {/* Added About Us link */}
+                            </Nav>
+                        </Navbar.Collapse>
+                        <Button variant="primary" className="room-page-hero-book-btn">Book Now</Button>
+                        <Nav.Link href="#language" className="room-page-nav-link ms-2"><BsGlobe size={20} /></Nav.Link> {/* Added globe icon */}
+                    </Container>
+                </Navbar>
+
+                <Container className="room-page-hero-content text-center text-white">
+                    <h1>Our Rooms & Suites</h1>
+                    <p>
+                        Discover your perfect sanctuary at Hotel Cambodge. Our rooms and suites offer a blend of
+                        luxury, comfort and breathtaking views, creating an unforgettable stay.
+                    </p>
+                </Container>
+            </div>
+
+            {/* Room Section */}
+            <Container className="room-page-content-section my-5">
+                {/* Oceanfront Suite */}
+                <Card className="room-page-card mb-4">
+                    <Row noGutters>
+                        <Col md={5}>
+                            <Card.Img src="https://d1t1qzzb2zwrre.cloudfront.net/master/media/cache/raffles_thumbs/room/68/68c1ceb02400f344012130.webp" alt="Oceanfront Suite" className="room-page-img" />
+                        </Col>
+                        <Col md={7}>
+                            <Card.Body>
+                                <Card.Title className="room-page-title">Oceanfront Suite</Card.Title>
+                                <div className="room-page-details d-flex flex-wrap mb-2">
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-square"></i> 130 sqm</span>
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-bed"></i> King Bed</span>
+                                    <span className="room-page-detail-item"><i className="bi bi-water"></i> Private Balcony</span>
+                                </div>
+                                <Card.Text className="room-page-description">
+                                    Indulge in the ultimate luxury with our spacious suites, featuring private
+                                    balconies, separate living areas, and panoramic ocean views. Perfect for families
+                                    or those seeking extra space and comfort.
+                                </Card.Text>
+                                <div className="d-flex justify-content-between align-items-center mt-3">
+                                    <span className="room-page-price">$450 <small>/ night</small></span>
+                                    <Button variant="warning" className="room-page-card-book-btn">Book Now</Button>
+                                </div>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+
+                {/* Deluxe Room */}
+                <Card className="room-page-card mb-4">
+                    <Row noGutters>
+                        <Col md={5} className="order-md-2"> {/* Image on right for Deluxe */}
+                            <Card.Img src="https://d1t1qzzb2zwrre.cloudfront.net/master/media/cache/raffles_thumbs/room/68/68c1ced8c055e564459172.webp" alt="Deluxe Room" className="room-page-img" />
+                        </Col>
+                        <Col md={7} className="order-md-1">
+                            <Card.Body>
+                                <Card.Title className="room-page-title">Deluxe Room</Card.Title>
+                                <div className="room-page-details d-flex flex-wrap mb-2">
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-square"></i> 50 sqm</span>
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-bed"></i> King or Twin</span>
+                                    <span className="room-page-detail-item"><i className="bi bi-tree"></i> Garden/Pool View</span>
+                                </div>
+                                <Card.Text className="room-page-description">
+                                    Experience unparalleled tranquility in our elegantly designed deluxe rooms, offering stunning modern
+                                    comfort and pool views, plush bedding, and modern amenities for a relaxing retreat.
+                                </Card.Text>
+                                <div className="d-flex justify-content-between align-items-center mt-3">
+                                    <span className="room-page-price">$250 <small>/ night</small></span>
+                                    <Button variant="warning" className="room-page-card-book-btn">Book Now</Button>
+                                </div>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+
+                {/* Standard Room */}
+                <Card className="room-page-card mb-4">
+                    <Row noGutters>
+                        <Col md={5}>
+                            <Card.Img src="https://d1t1qzzb2zwrre.cloudfront.net/master/media/cache/raffles_thumbs/room/68/68c1cf542c2c7706716983.webp" alt="Standard Room" className="room-page-img" />
+                        </Col>
+                        <Col md={7}>
+                            <Card.Body>
+                                <Card.Title className="room-page-title">Standard Room</Card.Title>
+                                <div className="room-page-details d-flex flex-wrap mb-2">
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-square"></i> 40 sqm</span>
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-bed"></i> QUEEN</span>
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-city"></i> City View</span>
+                                </div>
+                                <Card.Text className="room-page-description">
+                                    Enjoy a seamless blend of comfort and convenience in our contemporary
+                                    standard rooms, equipped with all essential amenities and a cozy ambiance for a
+                                    pleasant stay.
+                                </Card.Text>
+                                <div className="d-flex justify-content-between align-items-center mt-3">
+                                    <span className="room-page-price">$180 <small>/ night</small></span>
+                                    <Button variant="warning" className="room-page-card-book-btn">Book Now</Button>
+                                </div>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+
+                {/* Eco Bungalow */}
+                <Card className="room-page-card mb-4">
+                    <Row noGutters>
+                        <Col md={5} className="order-md-2"> {/* Image on right for Eco Bungalow */}
+                            <Card.Img src="https://d1t1qzzb2zwrre.cloudfront.net/master/media/cache/raffles_thumbs/room/68/68c1cf7cc4bcf075983266.webp" alt="Eco Bungalow" className="room-page-img" />
+                        </Col>
+                        <Col md={7} className="order-md-1">
+                            <Card.Body>
+                                <Card.Title className="room-page-title">Eco Bungalow</Card.Title>
+                                <div className="room-page-details d-flex flex-wrap mb-2">
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-square"></i> 50 sqm</span>
+                                    <span className="room-page-detail-item me-3"><i className="bi bi-bed"></i> King Bed</span>
+                                    <span className="room-page-detail-item"><i className="bi bi-compass"></i> Nature View</span>
+                                </div>
+                                <Card.Text className="room-page-description">
+                                    Immerse yourself in the natural beauty of Cambodia with our eco-friendly
+                                    bungalows, featuring sustainable materials, private terraces, and direct access to
+                                    the lush surroundings.
+                                </Card.Text>
+                                <div className="d-flex justify-content-between align-items-center mt-3">
+                                    <span className="room-page-price">$220 <small>/ night</small></span>
+                                    <Button variant="warning" className="room-page-card-book-btn">Book Now</Button>
+                                </div>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+            </Container>
+        </>
+    );
+}
+
+export default Room;

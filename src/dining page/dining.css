@@ -1,0 +1,268 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap');
+
+/* --- General Page Style --- */
+.dining-page-container {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+/* --- Hero Section --- */
+.dining-hero-section-specific {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #EAEAEA;
+    height: 70vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff; 
+}
+
+/* UPDATED: Added overlay style */
+.dining-hero-overlay-specific {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); 
+    z-index: 1; 
+}
+
+
+/* --- Navbar inside Hero --- */
+.dining-navbar-specific {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important;
+    padding: 1rem 0;
+    z-index: 2; 
+}
+
+.dining-logo-text-specific {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff !important; 
+    display: flex;
+    align-items: center;
+}
+
+.dining-logo-svg-specific {
+    stroke: #fff;
+}
+
+.dining-main-nav-specific .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    margin: 0 0.75rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.dining-main-nav-specific .nav-link.active {
+    color: #fff !important; 
+    font-weight: 500;
+}
+
+.dining-header-book-btn-specific {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dining-header-book-btn-specific:hover {
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-color: #fff;
+    color: #fff;
+}
+
+.dining-user-avatar-specific {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* --- Hero Content (Title & Subtitle) --- */
+.dining-hero-content-specific {
+    position: relative; 
+    z-index: 2;
+}
+
+.dining-hero-title-specific {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff; /* UPDATED to white */
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+}
+
+.dining-hero-subtitle-specific {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9); 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+
+/* --- Main Content & General Section Styling --- */
+main {
+    background-color: #fff;
+    padding-top: 3rem;
+}
+
+.dining-section-specific {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.dining-section-intro-text-specific {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.dining-section-title-specific {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* --- Cards Styling (Food Offerings & Restaurants) --- */
+.dining-food-offering-card-specific,
+.dining-restaurant-card-specific {
+    background-color: #F8FBFB;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+.dining-food-offering-card-specific {
+    padding: 2.5rem;
+}
+.dining-restaurant-card-specific {
+    overflow: hidden;
+}
+.dining-restaurant-card-specific .dining-card-body-specific {
+    padding: 2.5rem;
+}
+
+.dining-card-duration-specific {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.dining-card-title-specific {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.dining-card-description-specific {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+
+.dining-cta-link-specific {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.dining-cta-link-specific:hover {
+    color: #000;
+}
+
+.dining-card-img-specific {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* --- Food Gallery --- */
+.dining-food-gallery-specific {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.dining-gallery-main-image-specific img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.dining-gallery-collage-specific {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.dining-gallery-collage-item-specific img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* --- Footer --- */
+
+.dining-footer-section {
+    background-color: white;
+    padding: 2rem 0 1rem 0;
+    color: var(--anantara-color-light-text);
+}
+.dining-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.dining-footer-brand {
+    font-weight: 500;
+    color: var(--anantara-color-dark-text);
+    display: flex;
+    align-items: center;
+}
+.dining-footer-nav .nav-link {
+    color: var(--anantara-color-light-text);
+    padding: 0.5rem;
+}
+.dining-footer-nav .nav-link:hover {
+    color: var(--anantara-color-dark-text);
+}
+.dining-copyright {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,307 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap');
+
+/* --- General Page Style --- */
+.spa-wellness-page {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+/* --- Hero Section --- */
+.spa-hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #EAEAEA;
+    height: 70vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #fff; 
+}
+
+/* UPDATED: Added overlay style */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); 
+    z-index: 1; 
+}
+
+
+/* --- Navbar inside Hero --- */
+.spa-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important;
+    padding: 1rem 0;
+    z-index: 2; 
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff !important; 
+    display: flex;
+    align-items: center;
+}
+
+.logo-svg {
+    stroke: #fff; 
+}
+
+.main-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    margin: 0 0.75rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.main-nav .nav-link.active {
+    color: #fff !important; 
+    font-weight: 500;
+}
+
+.header-book-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.header-book-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-color: #fff;
+    color: #fff;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* --- Hero Content (Title & Subtitle) --- */
+.spa-hero-content {
+    position: relative; 
+    z-index: 2;
+}
+
+.spa-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff; /* UPDATED to white */
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.spa-hero-subtitle {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9); 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+
+/* --- Main Content & General Section Styling --- */
+main {
+    background-color: #fff;
+    padding-top: 3rem;
+}
+
+.spa-section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-intro-text {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* --- Cards Styling (Treatments & Wellness) --- */
+.treatment-card,
+.wellness-card {
+    background-color: #F8FBFB;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+}
+.treatment-card {
+    padding: 2.5rem;
+}
+.wellness-card {
+    overflow: hidden;
+}
+.wellness-card .card-body {
+    padding: 2.5rem;
+}
+
+.card-duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+
+.cta-link {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.cta-link:hover {
+    color: #000;
+}
+
+.card-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* --- Fitness Facilities Gallery --- */
+.fitness-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.gallery-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gallery-collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* --- Booking CTA Section --- */
+.booking-cta-section {
+    padding: 5rem 0;
+}
+
+.booking-cta-container {
+    background-color: #F0FAF8;
+    border-radius: 12px;
+    padding: 4rem;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.booking-cta-container .section-title {
+    color: #2c2c2c;
+}
+.booking-cta-container p {
+    color: #5a5a5a;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-now-cta-btn {
+    background-color: #2ACFB6;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-cta-btn:hover {
+    background-color: #25b39e;
+}
+
+/* --- Footer --- */
+.spa-footer-section {
+    background-color: white;
+    padding: 2rem 0 1rem 0;
+    color: var(--anantara-color-light-text);
+}
+.spa-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.spa-footer-brand {
+    font-weight: 500;
+    color: var(--anantara-color-dark-text);
+    display: flex;
+    align-items: center;
+}
+.spa-footer-nav .nav-link {
+    color: var(--anantara-color-light-text);
+    padding: 0.5rem;
+}
+.spa-footer-nav .nav-link:hover {
+    color: var(--anantara-color-dark-text);
+}
+.spa-copyright {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
