@@ -16,9 +16,9 @@ function Room() {
     return (
         <>
             {/* Hero Section - Updated to match home.js structure and classes */}
-            <header className="anantara-hero-section" style={heroStyle}>
-                <div className="anantara-hero-overlay"></div>
-                <Navbar expand="lg" variant="dark" className="anantara-main-navbar">
+            <header className="room-page-hero-section" style={heroStyle}>
+                <div className="room-page-hero-overlay"></div>
+                <Navbar expand="lg" variant="dark" className="room-page-main-navbar">
                     <Container>
                         <Navbar.Brand href="#home" className="d-flex align-items-center">
                              <img
@@ -39,15 +39,15 @@ function Room() {
                                 <Nav.Link as={Link} to="/spa">Spa</Nav.Link>
                                 <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About Us</Nav.Link>
-                                <Button className="anantara-btn-custom-orange ms-3">Book Now</Button>
+                                <Button className="room-page-btn-custom-orange ms-3">Book Now</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
 
-                <Container className="anantara-hero-content text-center text-white">
-                    <h1 className="anantara-hero-title">Our Rooms & Suites</h1>
-                    <p className="anantara-hero-subtitle">
+                <Container className="room-page-hero-content text-center text-white">
+                    <h1 className="room-page-hero-title">Our Rooms & Suites</h1>
+                    <p className="room-page-hero-subtitle">
                         Discover your perfect sanctuary at Hotel Cambodge. Our rooms and suites offer a blend of
                         luxury, comfort and breathtaking views, creating an unforgettable stay.
                     </p>
